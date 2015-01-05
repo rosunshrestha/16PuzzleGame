@@ -1,0 +1,45 @@
+.main-wrapper
+{
+    width: 218px;
+    height: 218px;
+    padding: 3px;
+    margin-top: 15px;
+    border: 1px solid black;
+    color:brown;
+    text-align: center;
+    line-height: 218px;
+    font-size: 20px;;
+}
+.box
+{
+    height: 50px;
+    width: 50px;
+    margin-left:4px;
+    margin-top: 4px;
+    color: red;
+    background-color: aqua;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+
+.box_none
+{
+    height: 50px;
+    width: 50px;
+    margin-left:4px;
+    margin-top: 4px;
+    float: left;
+    background-color: white;
+
+}
+
+#shuffle{
+    background: darkgrey;
+    cursor: pointer;
+    height: 40px;
+    width:100px;
+    color: aliceblue;
+}
