@@ -10,7 +10,8 @@ $(document).ready(function(){
                 current_state.push("box"+box_no);
             }
             current_state.push("box16");
-            $(".main-wrapper").append("<div class='box_none' id='box16'></div>")
+            $(".main-wrapper").append("<div class='box box_none' id='box16'></div>")
+
             $(".box").click(function() {
                     selected = jQuery.inArray( this.id, current_state)
                     empty = jQuery.inArray( "box16", current_state)
@@ -20,10 +21,8 @@ $(document).ready(function(){
                         current_state[empty] = this.id
                         $("#box16").empty()
                         $("#box16").removeClass("box_none")
-                        $("#box16").addClass("box")
                         $("#box16").text($("#"+this.id).text())
                         $("#"+this.id).empty()
-                        $("#"+this.id).removeClass("box")
                         $("#"+this.id).addClass("box_none")
                         var temp = this.id
                         $("#"+this.id).attr("id","box0")
